@@ -48,7 +48,6 @@ namespace FinalZHForm
                 return;
             }
 
-            // Törlés megerősítése
             var confirmResult = MessageBox.Show(
                 $"Biztosan törölni szeretnéd a(z) {törlendõ.Nev} nevű pilótát?",
                 "Törlés megerősítése",

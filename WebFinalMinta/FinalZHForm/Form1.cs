@@ -30,5 +30,14 @@ namespace FinalZHForm
             panel1.Controls.Add(userControl);
             userControl.Dock = DockStyle.Fill;
         }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+                var result = MessageBox.Show("Biztosan ki akar lépni?", "Kilépés megerõsítése", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.No)
+                {
+                    e.Cancel = true;
+                }
+        }
     }
 }

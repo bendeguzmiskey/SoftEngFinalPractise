@@ -29,9 +29,122 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            textBox1 = new TextBox();
+            listBox1 = new ListBox();
+            dataGridView1 = new DataGridView();
+            csapatBindingSource = new BindingSource(components);
+            versenyBindingSource = new BindingSource(components);
+            pilotumBindingSource = new BindingSource(components);
+            bindingSource1 = new BindingSource(components);
+            pilotaIdDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            csapatIdDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            szponzorDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            nemzetisegDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)csapatBindingSource).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)versenyBindingSource).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pilotumBindingSource).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)bindingSource1).BeginInit();
+            SuspendLayout();
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(3, 3);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(100, 23);
+            textBox1.TabIndex = 0;
+            // 
+            // listBox1
+            // 
+            listBox1.FormattingEnabled = true;
+            listBox1.ItemHeight = 15;
+            listBox1.Location = new Point(3, 32);
+            listBox1.Name = "listBox1";
+            listBox1.Size = new Size(120, 214);
+            listBox1.TabIndex = 1;
+            listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged_1;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.AutoGenerateColumns = false;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { pilotaIdDataGridViewTextBoxColumn, csapatIdDataGridViewTextBoxColumn, szponzorDataGridViewTextBoxColumn, nemzetisegDataGridViewTextBoxColumn });
+            dataGridView1.DataSource = versenyBindingSource;
+            dataGridView1.Location = new Point(129, 32);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowTemplate.Height = 25;
+            dataGridView1.Size = new Size(454, 214);
+            dataGridView1.TabIndex = 2;
+            // 
+            // csapatBindingSource
+            // 
+            csapatBindingSource.DataSource = typeof(F1Models.Csapat);
+            // 
+            // versenyBindingSource
+            // 
+            versenyBindingSource.DataSource = typeof(Verseny);
+            // 
+            // pilotumBindingSource
+            // 
+            pilotumBindingSource.DataSource = typeof(F1Models.Pilotum);
+            // 
+            // pilotaIdDataGridViewTextBoxColumn
+            // 
+            pilotaIdDataGridViewTextBoxColumn.DataPropertyName = "PilotaId";
+            pilotaIdDataGridViewTextBoxColumn.HeaderText = "PilotaId";
+            pilotaIdDataGridViewTextBoxColumn.Name = "pilotaIdDataGridViewTextBoxColumn";
+            pilotaIdDataGridViewTextBoxColumn.Resizable = DataGridViewTriState.True;
+            // 
+            // csapatIdDataGridViewTextBoxColumn
+            // 
+            csapatIdDataGridViewTextBoxColumn.DataPropertyName = "CsapatId";
+            csapatIdDataGridViewTextBoxColumn.HeaderText = "CsapatId";
+            csapatIdDataGridViewTextBoxColumn.Name = "csapatIdDataGridViewTextBoxColumn";
+            csapatIdDataGridViewTextBoxColumn.Resizable = DataGridViewTriState.True;
+            // 
+            // szponzorDataGridViewTextBoxColumn
+            // 
+            szponzorDataGridViewTextBoxColumn.DataPropertyName = "Szponzor";
+            szponzorDataGridViewTextBoxColumn.HeaderText = "Szponzor";
+            szponzorDataGridViewTextBoxColumn.Name = "szponzorDataGridViewTextBoxColumn";
+            // 
+            // nemzetisegDataGridViewTextBoxColumn
+            // 
+            nemzetisegDataGridViewTextBoxColumn.DataPropertyName = "Nemzetiseg";
+            nemzetisegDataGridViewTextBoxColumn.HeaderText = "Nemzetiseg";
+            nemzetisegDataGridViewTextBoxColumn.Name = "nemzetisegDataGridViewTextBoxColumn";
+            // 
+            // UserControlLoad
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(dataGridView1);
+            Controls.Add(listBox1);
+            Controls.Add(textBox1);
+            Name = "UserControlLoad";
+            Size = new Size(687, 482);
+            Load += UserControlLoad_Load;
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)csapatBindingSource).EndInit();
+            ((System.ComponentModel.ISupportInitialize)versenyBindingSource).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pilotumBindingSource).EndInit();
+            ((System.ComponentModel.ISupportInitialize)bindingSource1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private TextBox textBox1;
+        private ListBox listBox1;
+        private DataGridView dataGridView1;
+        private BindingSource bindingSource1;
+        private BindingSource versenyBindingSource;
+        private BindingSource pilotumBindingSource;
+        private BindingSource csapatBindingSource;
+        private DataGridViewTextBoxColumn pilotaIdDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn csapatIdDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn szponzorDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn nemzetisegDataGridViewTextBoxColumn;
     }
 }

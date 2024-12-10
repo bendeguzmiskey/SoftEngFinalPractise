@@ -11,7 +11,7 @@ public partial class Pilotum
 
     public string? Nemzetiseg { get; set; }
 
-    public DateTime SzuletesiDatum { get; set; }
+    public DateTime SzuletesiDatum { get; set; }    
 
     public virtual ICollection<Eredmeny> Eredmenies { get; set; } = new List<Eredmeny>();
 }
