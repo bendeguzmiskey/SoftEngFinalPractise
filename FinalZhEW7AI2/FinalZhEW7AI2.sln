@@ -5,6 +5,8 @@ VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinalZhEW7AI2", "FinalZhEW7AI2\FinalZhEW7AI2.csproj", "{D4CB4DFC-450A-45AC-B492-A40C6B9D1B4C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EW7AI2FinalForm", "EW7AI2FinalForm\EW7AI2FinalForm.csproj", "{D0D53AB4-843F-4920-A520-E71189C5703B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{D4CB4DFC-450A-45AC-B492-A40C6B9D1B4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4CB4DFC-450A-45AC-B492-A40C6B9D1B4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4CB4DFC-450A-45AC-B492-A40C6B9D1B4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0D53AB4-843F-4920-A520-E71189C5703B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0D53AB4-843F-4920-A520-E71189C5703B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0D53AB4-843F-4920-A520-E71189C5703B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0D53AB4-843F-4920-A520-E71189C5703B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
